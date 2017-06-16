@@ -1005,7 +1005,7 @@ var _ = framework.KubeDescribe("Projected", func() {
 			{
 				Name:    "projected-all-volume-test",
 				Image:   "gcr.io/google_containers/busybox:1.24",
-				Command: []string{"sh", "-c", "cat /all/podname && cat /all/secret-data && cat /all/configmap-data"},
+				Command: []string{"sh", "-c", "cat /all/podname && cat /all/secret-data && cat /all/configmap-data && echo fix"},
 				VolumeMounts: []v1.VolumeMount{
 					{
 						Name:      "podinfo",
