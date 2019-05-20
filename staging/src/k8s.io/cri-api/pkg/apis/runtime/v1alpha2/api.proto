@@ -357,6 +357,7 @@ message PodSandboxConfig {
     map<string, string> annotations = 7;
     // Optional configurations specific to Linux hosts.
     LinuxPodSandboxConfig linux = 8;
+    int64 termination_grace_period = 9;
 }
 
 message RunPodSandboxRequest {
